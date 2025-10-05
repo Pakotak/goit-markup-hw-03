@@ -11,26 +11,40 @@ body {
 .footer {
   background-color: #2e2f42;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 body {
   font-family: 'Roboto', sans-serif;
   color: #434455;
 }
 /* Header */
 /* #region Header */
-.header {
+.site-header {
   border-bottom: 1px solid #e7e9fc;
   background-color: #ffffff;
 }
 
 .header-container {
+  width: 1158px;
+  padding: 24px 15px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
-.logo {
+/* Навигация */
+.nav-bar {
+  display: flex;
+  align-items: center;
+}
+
+/* Лого */
+.logo-link {
+  margin-right: 76px; /* отступ от меню */
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -39,56 +53,46 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #4d5ae5;
-  padding-right: 76px;
-  padding-left: 156px;
 }
 
 .logo-studio {
   color: #2e2f42;
 }
 
-.menu {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-
-.menu-list {
+/* Меню */
+.main-menu {
   display: flex;
   list-style: none;
-  gap: 40px;
   margin: 0;
   padding: 0;
+  gap: 40px; /* расстояние между пунктами меню */
 }
 
-.menu-item {
-  display: flex;
-}
-
-.menu-list a {
+.menu-link {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
   text-decoration: none;
   color: #2e2f42;
+  padding: 24px 0; /* вертикальные отступы внутри ссылки */
 }
 
-.menu-list a:hover,
-.menu-list a:focus {
+.menu-link:hover,
+.menu-link:focus {
   color: #404bbf;
 }
 
-.contact {
+/* Контакты */
+.contact-info {
   font-style: normal;
 }
 
 .contact-list {
   display: flex;
   list-style: none;
-  gap: 40px;
-  justify-content: flex-end;
-  padding-right: 156px;
   margin: 0;
+  padding: 0;
+  gap: 40px; /* расстояние между контактами */
 }
 
 .contact-link {
@@ -123,12 +127,19 @@ body {
 }
 
 .hero-button {
+  display: block;
+  margin: 32px auto 0;
+  min-width: 169px;
   background-color: #4d5ae5;
-  cursor: pointer;
-  font-family: 'Roboto', sans-serif;
   border: none;
   padding: 16px 32px;
   border-radius: 4px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
   cursor: pointer;
 }
 
